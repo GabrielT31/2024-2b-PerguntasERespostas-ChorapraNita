@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=UnifrakturMaguntia&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+}
+
+
+:root{
+--fonte-texto:"Jacquard 12", system-ui;
+--fonte-titulo:"UnifrakturMaguntia", cursive;
+--azul:#2c17c9ee;
+--vermelha:#be0f0fe7;
+--amarela:#f3ff07;
+--preto:#111111;
+--laranja:#ff7a06;
+--roxo:#b20c83;
+--azul-ciano:#34b7ef;
+--verde :#1bc126da; 
+--azul-escuro:#300575cf;
+--cinza:#807f7f;
+--branco:#ffffff;
+--rosa:#fe7ed1;
+--marrom:#92431d;
+--lime: #BCEC00ff;
+--aureolin: #E9EA00ff;  
+--mimi-pink: #EED3DFff;
+--safety-orange: #ff7b00ff;
+--dark-orange-web: #ff8800ff;
+--princeton-orange: #ff9500ff;
+--orange-peel: #ffa200ff;
+--orange-web: #ffaa00ff;
+--selective-yellow: #ffb700ff;
+--mikado-yellow: #ffc300ff;
+--jonquil: #ffd000ff;
+--school-bus-yellow: #ffdd00ff;
+--canary: #ffea00ff;
+
+
+}
+body{
+    background-color: var(--lime);
+    font-family: var(--fonte-titulo) ;
+    color: var(--preto);
+}
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--selective-yellow);
+    padding: 1em;
+}
+footer p{
+    font-size: 1.2rem;
+}
+footer a{
+    color: var(--azul-escuro);
+    text-decoration: none;
+}
