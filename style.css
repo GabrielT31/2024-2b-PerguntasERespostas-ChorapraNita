@@ -1,61 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=UnifrakturMaguntia&display=swap');
-
-*{
-    margin: 0;  
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=UnifrakturMaguntia&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
     padding: 0;
 }
 
 
-:root{
---fonte-texto:"Jacquard 12", system-ui;
---fonte-titulo:"UnifrakturMaguntia", cursive;
---azul:#2c17c9ee;
---vermelha:#be0f0fe7;
---amarela:#f3ff07;
---preto:#111111;
---laranja:#ff7a06;
---roxo:#b20c83;
---azul-ciano:#34b7ef;
---verde :#1bc126da; 
---azul-escuro:#300575cf;
---cinza:#807f7f;
---branco:#ffffff;
---rosa:#fe7ed1;
---marrom:#92431d;
---lime: #BCEC00ff;
---aureolin: #E9EA00ff;  
---mimi-pink: #EED3DFff;
---safety-orange: #ff7b00ff;
---dark-orange-web: #ff8800ff;
---princeton-orange: #ff9500ff;
---orange-peel: #ffa200ff;
---orange-web: #ffaa00ff;
---selective-yellow: #ffb700ff;
---mikado-yellow: #ffc300ff;
---jonquil: #ffd000ff;
---school-bus-yellow: #ffdd00ff;
---canary: #ffea00ff;
+:root {
+    --fonte-texto: "Jacquard 12", system-ui;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+    --fonte-titulo: "UnifrakturMaguntia", cursive;
+    --azul: #2c17c9ee;
+    --vermelha: #be0f0fe7;
+    --amarela: #f3ff07;
+    --preto: #111111;
+    --laranja: #ff7a06;
+    --roxo: #b20c83;
+    --azul-ciano: #34b7ef;
+    --verde: #1bc126da;
+    --azul-escuro: #300575cf;
+    --cinza: #807f7f;
+    --branco: #ffffff;
+    --rosa: #fe7ed1;
+    --marrom: #92431d;
+    --lime: #BCEC00ff;
+    --aureolin: #E9EA00ff;
+    --mimi-pink: #EED3DFff;
+    --safety-orange: #ff7b00ff;
+    --dark-orange-web: #ff8800ff;
+    --princeton-orange: #ff9500ff;
+    --orange-peel: #ffa200ff;
+    --orange-web: #ffaa00ff;
+    --selective-yellow: #ffb700ff;
+    --mikado-yellow: #ffc300ff;
+    --jonquil: #ffd000ff;
+    --school-bus-yellow: #ffdd00ff;
+    --canary: #ffea00ff;
 
 
 }
-body{
-    background-color: var(--lime);
-    font-family: var(--fonte-titulo) ;
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-titulo);
     color: var(--preto);
 }
-footer{
+
+#caixa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.cartao {
+    margin: 1rem;
+    background-color: var(--mimi-pink);
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.cartao__conteudo {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+.cartao:hover .cartao__conteudo{
+    transform: rotateY(180deg);
+
+}
+.cartao__conteudo h3 {
+    border: 2px, solid var(--preto);
+    color: var(--azul-escuro);
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    padding: 0.5em;
+    position: absolute;
+    margin: 0.6em;
+    border-radius: 0.6em;
+    font-size: 1.5vw;
+    backface-visibility: hidden;
+
+}
+
+.cartao__conteudo__pergunta {
+    font-size: 1.5rem;
+    margin: 2.5rem;
+    font-family: var(--fonte-secundaria);
+
+}
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao__conteudo p {
+    margin: 1rem;
+    padding: 1.3rem;
+}
+
+.cartao__conteudo__resposta {
+    font-size: 1.5rem;
+    transform: rotateY(180deg);
+}
+
+footer {
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--selective-yellow);
+    background-color: var(--azul-ciano);
     padding: 1em;
 }
-footer p{
+
+footer p {
     font-size: 1.2rem;
 }
-footer a{
+
+footer a {
     color: var(--azul-escuro);
     text-decoration: none;
 }
