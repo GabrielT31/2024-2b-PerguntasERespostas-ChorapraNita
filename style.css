@@ -90,8 +90,9 @@ body {
 }
 
 .cartao__conteudo__pergunta {
-    font-size: 1.5rem;
-    margin: 2.5rem;
+    margin-top: 2.0em ;
+    font-size: 0.8 rem;
+    margin: 1.5 rem;
     font-family: var(--fonte-secundaria);
 
 }
@@ -109,7 +110,9 @@ body {
 }
 
 .cartao__conteudo__resposta {
-    font-size: 1.5rem;
+    margin-top: 3em;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
     transform: rotateY(180deg);
 }
 
